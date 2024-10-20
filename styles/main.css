@@ -1,0 +1,87 @@
+.main-section {
+  min-height: 100vh;
+  background: url("../assets/big/head.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 50px;
+  margin-bottom: 300px;
+}
+.main-content-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 180px 20px 50px;
+  flex: 1;
+}
+.main-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 25px;
+}
+
+.main-header {
+}
+.main-text {
+  max-width: 260px;
+}
+
+.main-button {
+}
+
+.caution {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.745);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 30px;
+}
+.caution-text {
+}
+.caution-link {
+  text-decoration: underline;
+}
+.caution-button {
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 167px;
+  flex-shrink: 0;
+  aspect-ratio: calc(167 / 40);
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .caution {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 650px) {
+  .main-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.718);
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .caution {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .caution-button {
+    width: 120px;
+  }
+}

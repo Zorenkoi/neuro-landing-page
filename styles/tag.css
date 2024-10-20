@@ -1,0 +1,14 @@
+.tag-section {
+  padding: 120px 0px 160px;
+  text-align: center;
+}
+.tag-body {
+  width: 100%;
+  padding: 0px 20px;
+}
+.tag-header {
+  margin-bottom: 25px;
+}
+.tag {
+  cursor: pointer;
+}

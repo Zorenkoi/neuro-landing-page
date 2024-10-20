@@ -1,0 +1,74 @@
+.shop-section {
+  text-align: center;
+  margin-bottom: 180px;
+}
+.shop-content {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+.shop-header {
+  margin-bottom: 20px;
+}
+
+.shop-text {
+  margin-bottom: 50px;
+}
+
+.shop-card-container {
+  display: flex;
+  gap: 25px;
+}
+.shop-card {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  row-gap: 40px;
+}
+.shop-card:nth-child(1) {
+  background-color: var(--dark-green);
+  color: #f6f9e5;
+}
+.shop-card:nth-child(2) {
+  background-color: var(--beige);
+  color: #c47b59;
+}
+.shop-card:nth-child(3) {
+  background-color: rgb(214, 206, 190);
+  color: #64baa1;
+}
+.shop-card-img {
+}
+.shop-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.1px;
+  text-transform: uppercase;
+}
+.shop-card-button {
+  border: 2px solid #000;
+  background: #fff;
+  width: 100%;
+  max-width: 180px;
+
+  height: 36px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+  .shop-card-container {
+    flex-wrap: wrap;
+  }
+  .shop-card {
+    padding: 30px 20px;
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,118 @@
+.books-section {
+  position: relative;
+}
+.greenbooks-section {
+  --button-color: #f6f9e5;
+  background-color: var(--dark-green);
+  color: white;
+  padding-bottom: 170px;
+}
+.beigebooks-section {
+  background-color: var(--beige);
+  color: #c47b59;
+  --button-color: #c47b59;
+  padding-bottom: 50px;
+}
+.wave-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: translateY(-97%);
+}
+.wave-row {
+  position: relative;
+  left: -200px;
+  display: flex;
+}
+.wave {
+  margin-right: -3px;
+}
+.books-grid {
+  display: grid;
+  align-items: center;
+}
+.greenbooks-grid {
+  grid-template-columns: 1fr 400px;
+}
+.beigebooks-grid {
+  grid-template-columns: 400px 1fr;
+}
+
+.books-image {
+  width: 100%;
+}
+.books-content {
+  display: grid;
+  gap: 25px;
+}
+.books-header {
+}
+.books-text {
+  max-width: 410px;
+}
+.books-pallete {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.pallete-cube-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0px 10px;
+}
+.pallete-cube {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+}
+.pallete-cube.red {
+  background-color: #d53f23;
+}
+.pallete-cube.blue {
+  background-color: #13c0d7;
+}
+.pallete-cube.brown {
+  background-color: #c47b59;
+}
+.pallete-cube.orange {
+  background-color: #ef9632;
+}
+
+@media (max-width: 1000px) {
+  .books-image {
+    margin: -100px 0px;
+  }
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+  .beigebooks-section {
+    padding-bottom: 70px;
+  }
+  .beigebooks-grid .books-content {
+    order: 1;
+  }
+  .books-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .books-pallete {
+    /* max-width: 400px;
+    width: 100%; */
+  }
+}
+
+@media (max-width: 550px) {
+  .books-image {
+    margin: -50px 0px;
+  }
+}
+@media (max-width: 450px) {
+  .books-image {
+    margin: -20px 0px;
+  }
+}
